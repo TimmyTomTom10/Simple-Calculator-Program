@@ -22,15 +22,43 @@ body{
     background-color: rgb(27, 27, 27);
     margin: auto;
     width: 45vh;
-    height: 50vh;
+    height: 52vh;
     border-radius: 0px 0px 10px 10px;
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* Creates 2 rows with a fixed height of 100px */
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+  /* Adds space between grid items */
 }
 .calc-buttons{
-    height: 8vh;
-    width: 8vh;
+    height: 9vh;
+    width: 9vh;
+    border-radius: 10vh;
     margin: 1vh;
-
+    text-align: center;
+    font-size: 6vh;
+    padding: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 0, 0);
+    font-style: bold;
+    font-family: monospace;
+}
+.operators{
+       height: 9vh;
+    width: 9vh;
+    border-radius: 10vh;
+    margin: 1vh;
+    text-align: center;
+    font-size: 6vh;
+    padding: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 0, 0);
+    font-style: bold;
+    font-family: monospace;
+    background-color: orange;
 }
