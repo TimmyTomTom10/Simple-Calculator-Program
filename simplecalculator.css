@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    height: 100vh;
+}
+
+
+#calculator-full-body{
+    margin: auto;
+    width: 45vh;
+    height: 60vh;
+    border-radius: 10px;
+
+}
+#calculator-head{
+    background-color: rgb(54, 54, 54);
+    margin: auto;
+    width: 45vh;
+    height: 10vh;
+    border-radius: 10px 10px 0px 0px;
+}
+#calculator-body{
+    background-color: rgb(27, 27, 27);
+    margin: auto;
+    width: 45vh;
+    height: 50vh;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+.calc-buttons{
+    height: 8vh;
+    width: 8vh;
+    margin: 1vh;
+
+}
