@@ -6,32 +6,42 @@ body{
 
 #calculator-full-body{
     margin: auto;
-    width: 45vh;
-    height: 60vh;
-    border-radius: 10px;
+    width: 55vh;
+    height: 54vh;
+    border: solid 1vh rgb(141, 141, 141);
+    border-radius: 2vh;
+
 
 }
 #calculator-head{
     background-color: rgb(54, 54, 54);
     margin: auto;
-    width: 45vh;
+    width: 53vh;
     height: 10vh;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 1vh 1vh 0vh 0vh;    
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 9.6vh;
+    color:rgb(236, 236, 236);
+    font-style: bold;
+    font-family: monospace;
+    padding: 1vh;
+    
 }
 #calculator-body{
     background-color: rgb(27, 27, 27);
     margin: auto;
-    width: 45vh;
-    height: 52vh;
-    border-radius: 0px 0px 10px 10px;
-
+    width: 55vh;
+    height: 42vh;
+    border-radius: 0vh 0vh 1vh 1vh;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   /* Creates 2 rows with a fixed height of 100px */
     grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
   /* Adds space between grid items */
 }
-.calc-buttons{
+.calc-buttons, .first-column, .operator-buttons{
     height: 9vh;
     width: 9vh;
     border-radius: 10vh;
@@ -42,23 +52,36 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color:rgb(255, 0, 0);
+    color:rgb(255, 255, 255);
     font-style: bold;
     font-family: monospace;
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
 }
-.operators{
-       height: 9vh;
-    width: 9vh;
-    border-radius: 10vh;
-    margin: 1vh;
-    text-align: center;
-    font-size: 6vh;
-    padding: 0vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:rgb(255, 0, 0);
-    font-style: bold;
-    font-family: monospace;
+.calc-buttons:hover{
+    background-color: rgb(63, 63, 63);
+}
+.calc-buttons:active{
+    background-color: rgb(68, 68, 68);
+}
+.first-column{
     background-color: orange;
+}
+.first-column:hover{
+    background-color: rgb(255, 182, 46);
+}
+.first-column:active{
+    background-color: rgb(255, 192, 74);
+}
+.operator-buttons{
+    background-color: rgb(102, 228, 77);
+}
+.operator-buttons:hover{
+    background-color: rgb(157, 233, 142);
+}
+.operator-buttons:active{
+    background-color: rgb(96, 238, 68);
+}
+#delBtn{
+    font-size: 3.5vh;
 }
